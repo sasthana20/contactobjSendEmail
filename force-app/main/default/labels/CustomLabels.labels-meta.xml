@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>DLP_Outlook_Green_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DLP Outlook Green Label</shortDescription>
+        <value>Allowed classification label detected</value>
+    </labels>
+    <labels>
+        <fullName>DLP_Outlook_Red_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DLP Outlook Red Label</shortDescription>
+        <value>Restricted classification label detected</value>
+    </labels>
+    <labels>
+        <fullName>DLP_Trigger_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DLP Trigger Error</shortDescription>
+        <value>Email contains restricted classification label and cannot be saved</value>
+    </labels>
+    <labels>
+        <fullName>Delivery_Option_FRSOnly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delivery Option FRSOnly</shortDescription>
+        <value>FRSOnly</value>
+    </labels>
+    <labels>
+        <fullName>Delivery_Option_FRSOnly_Email_Domain</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delivery Option FRSOnly Email Domain</shortDescription>
+        <value>.frb.org</value>
+    </labels>
+    <labels>
+        <fullName>FRSOnly_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FRSOnly Error</shortDescription>
+        <value>Email includes outside addresses and defined as FRSOnly</value>
+    </labels>
+</CustomLabels>

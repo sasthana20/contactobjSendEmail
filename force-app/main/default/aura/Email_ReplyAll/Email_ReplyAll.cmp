@@ -1,0 +1,3 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId">
+    <c:sendEmail recordId="{!v.recordId}" responseType="Reply All" onclose="{!c.closeQA}"></c:sendEmail>
+</aura:component>

@@ -1,0 +1,42 @@
+<aura:component implements="clients:availableForMailAppAppPage,clients:hasItemContext,flexipage:availableForAllPageTypes" controller="DLPFlagController">
+
+    <aura:attribute name="subject" type="String" />
+    <aura:attribute name="messageBody" type="String" />
+    <aura:attribute name="cueColor" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.handleMessageBodyChange}" />
+    <aura:handler name="change" value="{!v.messageBody}" action="{!c.handleMessageBodyChange}" />
+
+    <div class="slds-card slds-hide">
+        <div class="slds-card__header slds-grid slds-m-around_small slds-theme_default">
+            <lightning:inputRichText value="{!v.messageBody}" />
+        </div>
+    </div>
+
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+
+            <header class="slds-media slds-media_center slds-theme_default slds-has-flexi-truncate">
+                <!--<div class="slds-media__figure slds-text-heading_large">-->
+                <div class="slds-media__body">
+                    <aura:if isTrue="{!v.cueColor == 'red'}">
+                        <span class="red slds-text-heading_small"> &nbsp; &nbsp; &nbsp;</span> <span class="slds-text-heading_small slds-text-color_error"> &nbsp; {!$Label.c.DLP_Outlook_Red_Label}</span>
+                        <aura:set attribute="else">
+                            <span class="green slds-text-heading_small"> &nbsp; &nbsp; &nbsp;</span> <span class="slds-text-heading_small"> &nbsp; {!$Label.c.DLP_Outlook_Green_Label}</span>
+                        </aura:set>
+                    </aura:if>
+                </div>
+                <!--
+                <div class="slds-media__body">
+                    <h2 class="slds-grid slds-grid_vertical-align-center">
+                        <span class="slds-text-heading_small">
+                            Classification Labels Detected
+                        </span>
+                    </h2>
+                </div>
+            -->
+            </header>
+
+        </div>
+    </article>
+</aura:component>

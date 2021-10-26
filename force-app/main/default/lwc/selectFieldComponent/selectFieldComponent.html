@@ -1,0 +1,17 @@
+<template>              
+    <!-- <lightning-input type="text"
+             value={searchValue}
+             label="Contact Name"
+             onchange={searchKeyword}
+             ></lightning-input> -->
+             <template if:true={optionsValues}>
+    <lightning-radio-group name="radioGroup"
+        label="Select Merge Field"
+        options={optionsValues}
+        value={selectedField}  
+        onchange={handleSelectedValue}                          
+        type="radio"
+       ></lightning-radio-group><br/>
+    <lightning-button variant="brand" label="Merge Field" onclick={handleCloseModel} ></lightning-button> 
+</template>                   
+</template>

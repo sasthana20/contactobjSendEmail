@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Replace this with LWC quick action after Summer 21 release
+
+https://help.salesforce.com/articleView?id=releasenotes.rn_lwc_quick_actions.htm&amp;type=5&amp;release=232</description>
+    <height>500</height>
+    <label>Reply</label>
+    <lightningComponent>Email_Reply</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

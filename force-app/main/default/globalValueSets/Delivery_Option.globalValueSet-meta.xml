@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>EXTERNAL</fullName>
+        <default>false</default>
+        <label>EXTERNAL</label>
+    </customValue>
+    <customValue>
+        <fullName>FRSONLY</fullName>
+        <default>false</default>
+        <label>FRSONLY</label>
+    </customValue>
+    <masterLabel>Delivery Option</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
